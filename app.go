@@ -38,7 +38,7 @@ func GetLatestsArticles(w http.ResponseWriter, r *http.Request) {
 			Title:        "Title " + string(i),
 			Descpriotion: "Description " + string(i),
 			Summary:      "Summary " + string(i),
-			Img:          "Img " + string(i),
+			Img:          "https://www.hollywoodreporter.com/wp-content/uploads/2017/06/gettyimages-622492080_-_h_2017.jpg",
 		}
 		articles = append(articles, article)
 	}
@@ -62,7 +62,7 @@ func GetArticle(w http.ResponseWriter, r *http.Request) {
 		Title:        "Title " + id,
 		Descpriotion: "Description " + id,
 		Summary:      "Summary " + id,
-		Img:          "Img " + id,
+		Img:          "https://www.hollywoodreporter.com/wp-content/uploads/2017/06/gettyimages-622492080_-_h_2017.jpg",
 	}
 
 	jsonBody, _ := json.Marshal(article)
